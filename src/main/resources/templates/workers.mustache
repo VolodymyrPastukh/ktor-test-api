@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="/static/styles.css" rel="stylesheet"/>
+    <title>SatanChurch</title>
+</head>
+
+<body style="text-align: center; font-family: sans-serif">
+<img src="/pictures/satan.png" height="250" width="250">
+<h1>Slaves of Satan</h1>
+<p><i>O father, o Satan, o Sun</i></p>
+<hr>
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Email</th>
+            <th>Type</th>
+        </tr>
+    </thead>
+    {{#elements}}
+        <tbody>
+            <tr>
+                <td>{{name}}</td>
+                <td>{{surname}}</td>
+                <td>{{email}}</td>
+                <td>{{type}}</td>
+            </tr>
+        </tbody>
+    {{/elements}}
+</table>
+<hr>
+
+<div>
+    <h3>Add a new slave!</h3>
+    <form action="/addSlave" method="post">
+        <input type="text" placeholder="name" name="name"><br>
+        <input type="text" placeholder="surname" name="surname"><br>
+        <input type="text" placeholder="email" name="email"><br>
+        <input type="submit">
+    </form>
+</div>
+<hr>
+
+<div id="footer">
+    Copyright &copy; 2021 Voldemar
+</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+
+###
+GET http://127.0.0.1:8080/order/2020-04-06-01
+Content-Type: application/json
+
+###
+POST http://127.0.0.1:8080/workers
+Content-Type: application/json
+
+{
+  "name": "Vovko",
+  "surname": "Brovko",
+  "email": "volodymyrpastukh99@gmail.com"
+}
+
+
+###
+POST http://127.0.0.1:8080/literatures
+Content-Type: application/json
+
+{
+  "title": "Vladislav",
+  "author": "Golovashuk",
+  "year": "2001"
+}
+
+###
+POST http://127.0.0.1:8080/customer
+Content-Type: application/json
+
+{
+  "name": "Victoria",
+  "surname": "Mendel",
+  "email": "MikaMendel@mail.ru"
+}
+
+
+###
+GET http://127.0.0.1:8080/customer
+Accept: application/json
+
+###
+GET http://127.0.0.1:8080/customer/100
+
+###
+GET http://127.0.0.1:8080/customer/500
+
+###
+DELETE http://127.0.0.1:8080/customer/100
+
+###
+DELETE http://127.0.0.1:8080/customer/500
+
+
+
+GET http://127.0.0.1:8080/order
+Content-Type: application/json
+
+###
+GET http://127.0.0.1:8080/order/2020-04-06-01/total
+Content-Type: application/json

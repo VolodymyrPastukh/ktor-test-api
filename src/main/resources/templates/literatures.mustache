@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="/static/styles.css" rel="stylesheet"/>
+    <title>SatanChurch</title>
+</head>
+
+<body style="text-align: center; font-family: sans-serif">
+<img src="/pictures/satan.png" height="250" width="250">
+<h1>Slaves of Satan</h1>
+<p><i>O father, o Satan, o Sun</i></p>
+<hr>
+<table class="styled-table">
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Year</th>
+    </tr>
+    </thead>
+    {{#elements}}
+        <tbody>
+        <tr>
+            <td>{{title}}</td>
+            <td>{{author}}</td>
+            <td>{{year}}</td>
+        </tr>
+        </tbody>
+    {{/elements}}
+</table>
+<hr>
+<div id="footer">
+    Copyright &copy; 2021 Voldemar
+</div>
+</body>
+</html>
